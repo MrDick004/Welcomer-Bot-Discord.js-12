@@ -5,7 +5,7 @@ const welcomeChannelId = 'INSERISCI L\'ID DEL CANALE DEL MESSAGGIO DI BENVENUTO'
 const goodbyeChannelId = 'INSERISCI L\'ID DEL CANALE DEL MESSAGGIO DI ADDIO';
 
 client.once('ready', () => {
-    console.log('Bot is online!');
+    console.log('Il Bot è Online!');
 });
 
 client.on('guildMemberAdd', member => {
