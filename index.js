@@ -11,14 +11,14 @@ client.once('ready', () => {
 client.on('guildMemberAdd', member => {
     const welcomeChannel = member.guild.channels.cache.get(welcomeChannelId);
     if (welcomeChannel) {
-        welcomeChannel.send(`Benvenuto/a ${member.user.tag} nel nostro server!`);
+        welcomeChannel.send(`Benvenuto/a ${member.user.tag} nel nostro server Discord!`);
     }
 });
 
 client.on('guildMemberRemove', member => {
     const goodbyeChannel = member.guild.channels.cache.get(goodbyeChannelId);
     if (goodbyeChannel) {
-        goodbyeChannel.send(`Arrivederci ${member.user.tag}! Speriamo di rivederti presto.`);
+        goodbyeChannel.send(`Arrivederci ${member.user.tag}!`);
     }
 });
 
